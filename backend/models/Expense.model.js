@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
+const participantSchema = new mongoose.Schema({
+    userId: { type: String, required: true },
+    share: { type: Number, required: true }
+});
+
 const expenseSchema = new mongoose.Schema({
     amount: { type: Number, required: true },
-    participants: [{ userId: String, share: Number }],
-    splitMethod: { type: String, enum: ['equal', 'exact', 'percentage'], required: true },
-}, { timestamps: true });
-
-expenseSchema.index({ createdAt: 1 });
+    splitMethod: { type: String, required: true },
+    participants: [participantSchema],
+    createdAt: { type: Date, default: Date.now }
+});
 
 module.exports = mongoose.model('Expense', expenseSchema);
