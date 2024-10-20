@@ -1,0 +1,9 @@
+# this document contains what libraries i would require
+
+mongoose -- mongodb
+cors
+body-parser
+express
+json2csv
+pdfkit
+dotenv
