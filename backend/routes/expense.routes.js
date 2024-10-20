@@ -1,10 +1,16 @@
 const express = require('express');
-const { addExpense, getExpenses } = require('../controllers/expenseController');
-const { validateExpense, handleValidationErrors } = require('../middleware/validation');
-
+const { 
+    addExpense, 
+    getExpenses, 
+    downloadExpensesAsPDF, 
+    downloadExpensesAsCSV 
+} = require('../controllers/expenseController');
+const { authenticateUser } = require('../middleware/auth');
 const router = express.Router();
 
-router.post('/', validateExpense, handleValidationErrors, addExpense);
-router.get('/', getExpenses);
+router.post('/', authenticateUser, addExpense);
+router.get('/', authenticateUser, getExpenses);
+router.get('/download/pdf', authenticateUser, downloadExpensesAsPDF);
+router.get('/download/csv', authenticateUser, downloadExpensesAsCSV);
 
 module.exports = router;
