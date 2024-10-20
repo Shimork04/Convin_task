@@ -45,3 +45,71 @@ The Expense Management Application is a web-based tool that helps users manage a
    ```bash
    git clone https://github.com/yourusername/expense-management-app.git
    cd expense-management-app
+
+Install dependencies
+
+bash
+Copy code
+npm install
+Create a .env file in the root directory
+
+plaintext
+Copy code
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
+PORT=3000
+Run the application
+
+bash
+Copy code
+npm start
+Usage
+Access the application by navigating to http://localhost:3000 in your browser.
+Register a new user to start adding and managing expenses.
+API Documentation
+User Endpoints
+Create User
+
+POST /api/users
+Request Body:
+json
+Copy code
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "securepassword"
+}
+Get All Users
+
+GET /api/users
+Get User by ID
+
+GET /api/users/:id
+Delete User
+
+DELETE /api/users/:id
+Expense Endpoints
+Add Expense
+
+POST /api/expenses
+Request Body:
+json
+Copy code
+{
+  "amount": 1000,
+  "participants": [
+    { "userId": "userId1", "share": 50 },
+    { "userId": "userId2", "share": 50 }
+  ],
+  "splitMethod": "percentage"
+}
+Get All Expenses
+
+GET /api/expenses
+Testing
+To run tests, use the following command:
+
+bash
+Copy code
+npm test
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
