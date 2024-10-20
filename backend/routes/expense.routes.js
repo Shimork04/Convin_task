@@ -5,7 +5,7 @@ const {
     downloadExpensesAsPDF, 
     downloadExpensesAsCSV 
 } = require('../controllers/expenseController');
-const { authenticateUser } = require('../middleware/auth');
+const { authenticateUser } = require('../middlewares/auth.js');
 const router = express.Router();
 
 router.post('/', authenticateUser, addExpense);

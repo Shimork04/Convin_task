@@ -1,6 +1,6 @@
 const express = require('express');
-const { createUser, getUsers, getUserById, deleteUser } = require('../controllers/userController');
-const { authenticateUser } = require('../middleware/auth');
+const { createUser, getUsers, getUserById, deleteUser } = require('../controllers/userController.js');
+const { authenticateUser } = require('../middlewares/auth.js');
 const router = express.Router();
 
 router.post('/', createUser); // Create a new user
