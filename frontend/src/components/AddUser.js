@@ -11,7 +11,7 @@ const AddUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/users/', user);
+      await axios.post('http://localhost:3001/api/users', user);
       alert('User added successfully!');
     } catch (error) {
       alert('Error adding user: ' + error.message);
