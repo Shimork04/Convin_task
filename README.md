@@ -72,7 +72,6 @@ Register a new user to start adding and managing expenses.
 ## API Documentation
 **User Endpoints**
 1. Create User
-
 POST /api/users
 Request Body:
 {
@@ -90,9 +89,9 @@ GET /api/users/:id
 4. Delete User
 DELETE /api/users/:id
 
-5. Expense Endpoints
+**Expense Endpoints**
 
-Add Expense
+1. Add Expense
 POST /api/expenses
 Request Body:
 json
@@ -105,7 +104,7 @@ json
   "splitMethod": "percentage"
 }
 
-Get All Expenses
+2. Get All Expenses
 GET /api/expenses
 
 ## Testing
