@@ -84,7 +84,7 @@ This project is a **full-stack Expense Tracker App** built using **React.js** on
 
   ```bash
   cd server
-  npm start
+  npm run dev
   ```
 
 6. Run the frontend application:
