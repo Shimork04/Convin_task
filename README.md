@@ -59,7 +59,7 @@ The Expense Management Application is a web-based tool that helps users manage a
 ## Installation
 1. **Clone the repository**
    ```bash
-   [git clone https://github.com/Shimork04/expense-management-app.git](https://github.com/Shimork04/expense-management-app.git)
+   git clone https://github.com/Shimork04/expense-management-app.git
    cd expense-management-app
 
 2. **Install dependencies**
