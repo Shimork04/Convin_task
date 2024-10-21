@@ -17,7 +17,7 @@
 ## Project Description
 The Expense Management Application is a web-based tool that helps users manage and track their expenses. It allows users to add expenses, split them among participants using different methods, and view their individual and overall expenses. The application also includes user management features with authentication and authorization.
 
-## User End
+## User End (Prototype)
 
 **Add User Fucntionality**
 ![image](https://github.com/user-attachments/assets/afa193bb-dbf9-49a0-824f-8225cba3379c)
@@ -52,8 +52,7 @@ The Expense Management Application is a web-based tool that helps users manage a
 - Mongoose
 - JWT for authentication
 - bcrypt for password hashing
-- HTML, CSS, JavaScript for the frontend
-- Bootstrap for UI components
+- HTML, CSS, JavaScript for the frontend prototyping
 - PDFKit for PDF generation
 - json2csv for CSV conversion
 
