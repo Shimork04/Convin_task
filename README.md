@@ -40,6 +40,13 @@ This project is a **full-stack Expense Tracker App** built using **React.js** on
 
 ---
 
+## User end (Prototype)
+
+![image](https://github.com/user-attachments/assets/a083ccdb-eee5-4f5d-b28a-ce3269fcbc62)
+![image](https://github.com/user-attachments/assets/b84fee65-fa65-48e6-b324-affb562cb8e3)
+![image](https://github.com/user-attachments/assets/3e3a1c36-c2b2-46d0-a3f2-2e059a194ba8)
+
+
 ## **Tech Stack**  
 - **Frontend:** React.js, CSS  
 - **Backend:** Node.js, Express.js  
