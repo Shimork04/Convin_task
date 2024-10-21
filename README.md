@@ -17,6 +17,23 @@
 ## Project Description
 The Expense Management Application is a web-based tool that helps users manage and track their expenses. It allows users to add expenses, split them among participants using different methods, and view their individual and overall expenses. The application also includes user management features with authentication and authorization.
 
+## User End
+
+**Add User Fucntionality**
+![image](https://github.com/user-attachments/assets/afa193bb-dbf9-49a0-824f-8225cba3379c)
+
+**Add Expense (with split options)**
+![image](https://github.com/user-attachments/assets/8fb55784-143a-4550-b656-4f562e37e38b)
+
+**Viewing expenses**
+![image](https://github.com/user-attachments/assets/8b964308-459d-43f3-b432-a47828108a04)
+
+**Balance Sheet download Option (CSV/PDF)**
+![image](https://github.com/user-attachments/assets/db9903a9-b1c8-4d80-97b1-9146aae3be97)
+
+
+
+
 ## Features
 - User Management:
   - Create and retrieve user accounts.
