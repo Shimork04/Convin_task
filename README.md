@@ -1,6 +1,6 @@
 # **Expense Tracker Application**  
 
-This project is a **full-stack Expense Tracker App** built using **React.js** on the frontend and **Node.js with Express.js** on the backend. It provides features like user management, expense tracking, balance sheet downloads, and advanced features such as **MongoDB integration for large datasets**, **user authentication and authorization**, **error handling**, and **input validation**. The application is optimized for **performance and scalability**, ensuring a smooth experience even with high data volumes.  
+This project is a **full-stack Expense Tracker App** built using **React.js** on the frontend and **Node.js with Express.js** on the backend as part of Convin Backend Intern Task. It provides features like user management, expense tracking, balance sheet downloads, and advanced features such as **MongoDB integration for large datasets**, **user authentication and authorization**, **error handling**, and **input validation**. The application is optimized for **performance and scalability**, ensuring a smooth experience even with high data volumes.  
 
 ## **Table of Contents**  
 1. [Features](#features)  
