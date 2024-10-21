@@ -54,7 +54,7 @@ This project is a **full-stack Expense Tracker App** built using **React.js** on
 
 ![image](https://github.com/user-attachments/assets/b84fee65-fa65-48e6-b324-affb562cb8e3)
 
-**4. Adding Expense**
+**4. Adding Expense (Split functionality)**
 
 ![image](https://github.com/user-attachments/assets/3e3a1c36-c2b2-46d0-a3f2-2e059a194ba8)
 
