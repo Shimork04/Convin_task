@@ -1,5 +1,4 @@
-// seperate function for user validation (bonus point)
-
+// seperate function for user validation (bonus function)
 
 const { check, validationResult } = require('express-validator');
 

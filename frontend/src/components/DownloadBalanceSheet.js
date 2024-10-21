@@ -1,4 +1,6 @@
 import axios from 'axios';
+import '../App.css' 
+
 
 const DownloadBalanceSheet = () => {
   const handleDownload = async (format) => {

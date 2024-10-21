@@ -2,7 +2,7 @@ const Expense = require('../models/Expense.model');
 const PDFDocument = require('pdfkit');
 const { createObjectCsvStringifier } = require('csv-writer');
 
-// Calculate split logic remains unchanged
+// Calculate split
 const calculateSplit = (amount, participants, method) => {
     if (method === 'equal') {
         const share = amount / participants.length;
@@ -20,7 +20,7 @@ const calculateSplit = (amount, participants, method) => {
     }
 };
 
-// Add Expense Logic remains unchanged
+// Add Expense Logic 
 const addExpense = async (req, res) => {
     try {
         const { amount, participants, splitMethod } = req.body;
@@ -32,7 +32,7 @@ const addExpense = async (req, res) => {
     }
 };
 
-// Get Expenses Logic remains unchanged
+// Get Expenses Logic
 const getExpenses = async (req, res) => {
     const { page = 1, limit = 10 } = req.query;
     try {

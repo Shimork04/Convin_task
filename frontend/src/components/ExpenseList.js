@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../App.css';
 
 const ExpenseList = () => {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
     const fetchExpenses = async () => {
-      const response = await axios.get('http://localhost:3000/api/expenses');
-      setExpenses(response.data);
+      try {
+        const response = await axios.get('http://localhost:3000/api/expenses');
+        setExpenses(response.data);
+      } catch (error) {
+        alert('Error fetching expenses: ' + error.message);
+      }
     };
     fetchExpenses();
   }, []);
@@ -15,11 +20,17 @@ const ExpenseList = () => {
   return (
     <div>
       <h2>Expenses</h2>
-      <ul>
-        {expenses.map((expense, index) => (
-          <li key={index}>{`Amount: ${expense.amount}, Split Method: ${expense.splitMethod}`}</li>
-        ))}
-      </ul>
+      {expenses.length === 0 ? (
+        <p>No expenses found.</p>
+      ) : (
+        <ul>
+          {expenses.map((expense, index) => (
+            <li key={index}>
+              <strong>Amount:</strong> {expense.amount}, <strong>Split Method:</strong> {expense.splitMethod}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

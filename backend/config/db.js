@@ -4,8 +4,7 @@ const dotenv = require('dotenv')
 
 dotenv.config();
 
-
-// function for connecting mongodb database
+// function for connecting mongodb database for large datasets.
 const connectDB = async () =>{
     try{
         await mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true});
